@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn btn-style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Online Basic Calculator</h1>
+    <div class="card">
+        <div class="calc_header">
+            <input type="text" id="result" maxlength="120">
+        </div>
+        <div class="calc_body">
+            <div>
+                <input type="button" class="btn" value="C" onclick="cls()">
+                <input type="button" class="btn" value="+/-" onclick="changeSign()">
+                <input type="button" class="btn" value="Ans" onclick="ans()">
+                <input type="button" class="btn-style" value="÷" onclick="oparetor('/')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="7" onclick="getValue(7)">
+                <input type="button" class="btn" value="8" onclick="getValue(8)">
+                <input type="button" class="btn" value="9" onclick="getValue(9)">
+                <input type="button" class="btn-style" value="x" onclick="oparetor('*')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="4" onclick="getValue(4)">
+                <input type="button" class="btn" value="5" onclick="getValue(5)">
+                <input type="button" class="btn" value="6" onclick="getValue(6)">
+                <input type="button" class="btn-style" value="-" onclick="oparetor('-')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="1" onclick="getValue(1)">
+                <input type="button" class="btn" value="2" onclick="getValue(2)">
+                <input type="button" class="btn" value="3" onclick="getValue(3)">
+                <input type="button" class="btn-style" value="+" onclick="oparetor('+')">
+            </div>
+            <div>
+                <input type="button" class="btn" value="0" onclick="getValue(0)">
+                <input type="button" class="btn" value="." onclick="getDotValue()">
+                <input type="button" class="btn" value="DEL" onclick="del()">
+                <input type="button" class="btn-style" value="=" style="background-color: rgb(20, 83, 62);"
+                    onclick="caculate()">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
